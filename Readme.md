@@ -68,14 +68,11 @@ Fetch all product details from Sanity CMS.
     "description": "A stylish and elegant dress for special occasions."
   }
 ]
-2️⃣ Shipping API: /api/shipping-label (POST)
+### 2️⃣ Shipping API: /api/shipping-label (POST)
 Generate shipping labels through ShipEngine.
 
 Example Request:
 
-json
-Copy
-Edit
 {
   "orderId": "ORD12345",
   "address": {
@@ -85,26 +82,20 @@ Edit
     "zip": "94105"
   }
 }
-3️⃣ Checkout API: /api/checkout (POST)
+### 3️⃣ Checkout API: /api/checkout (POST)
 Handle payments via Stripe.
 
 Example Request:
 
-json
-Copy
-Edit
 {
   "amount": 150,
   "currency": "USD",
   "paymentMethodId": "pm_1HkI2yHIEP6XZ5Tz3LkU6xyz"
 }
-📝 Sanity Schema Definitions
-1️⃣ Product Schema
+## 📝 Sanity Schema Definitions
+### 1️⃣ Product Schema
 Defines the structure for managing products.
 
-javascript
-Copy
-Edit
 export default {
   name: "product",
   type: "document",
@@ -117,12 +108,9 @@ export default {
     { name: "category", type: "string", title: "Category" }
   ]
 };
-2️⃣ Order Schema
+### 2️⃣ Order Schema
 Tracks details about each order placed by users.
 
-javascript
-Copy
-Edit
 export default {
   name: "order",
   type: "document",
@@ -139,12 +127,9 @@ export default {
     { name: "status", type: "string", title: "Order Status" }
   ]
 };
-3️⃣ Customer Schema
+### 3️⃣ Customer Schema
 Manage customer details for personalization and order tracking.
 
-javascript
-Copy
-Edit
 export default {
   name: "customer",
   type: "document",
@@ -161,22 +146,18 @@ export default {
     }
   ]
 };
-📂 Repository Structure
-Copy
-Edit
+## 📂 Repository Structure
+
 ecommerce-marketplace-docs/
 ├── README.md
 ├── overview.md
 ├── features.md
 ├── schemas.md
-📢 Contributing
+
+## 📢 Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue for suggestions.
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
-
-vbnet
-Copy
-Edit
 
 You can copy this into your `README.md` file and push it to your GitHub repository. Let me know if you need h
