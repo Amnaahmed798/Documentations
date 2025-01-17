@@ -68,6 +68,72 @@ Fetch all product details from Sanity CMS.
     "description": "A stylish and elegant dress for special occasions."
   }
 ]
+📡 API Endpoints
+1️⃣ /api/products (GET)
+Fetches product data from Sanity CMS.
+Example Response:
+
+[
+  {
+    "id": "1",
+    "name": "Product A",
+    "price": 100,
+    "description": "A great product."
+  }
+]
+2️⃣ /api/shipping-label (POST)
+Generates a shipping label using ShipEngine.
+Example Request:
+
+{
+  "orderId": "12345",
+  "address": {
+    "line1": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001"
+  }
+}
+3️⃣ /api/checkout (POST)
+Processes payments via Stripe.
+Example Request:
+
+{
+  "amount": 200,
+  "currency": "USD",
+  "paymentMethodId": "pm_1GqIC8AHEMiO6EgC2LkU5bXE"
+}
+📝 Sanity Schema Documentation
+
+1️⃣ Products Schema
+
+export default {
+  name: "product",
+  type: "document",
+  title: "Product",
+  fields: [
+    { name: "name", type: "string", title: "Product Name" },
+    { name: "price", type: "number", title: "Price" },
+    { name: "description", type: "text", title: "Description" },
+    { name: "image", type: "image", title: "Product Image" },
+    { name: "category", type: "string", title: "Category" }
+  ]
+};
+2️⃣ Orders Schema
+
+export default {
+  name: "order",
+  type: "document",
+  title: "Order",
+  fields: [
+    { name: "user", type: "string", title: "User" },
+    { name: "productIds", type: "array", of: [{ type: "reference", to: [{ type: "product" }] }] },
+    { name: "totalPrice", type: "number", title: "Total Price" },
+    { name: "status", type: "string", title: "Order Status" }
+  ]
+};
+
+
 ### 2️⃣ Shipping API: /api/shipping-label (POST)
 Generate shipping labels through ShipEngine.
 
