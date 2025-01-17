@@ -71,7 +71,8 @@ Fetch all product details from Sanity CMS.
 2️⃣ Shipping API: /api/shipping-label (POST)
 Generates a shipping label using ShipEngine.
 
-Example Request:
+**Example Response:**
+```json
 
 {
   "orderId": "12345",
