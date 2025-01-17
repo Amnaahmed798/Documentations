@@ -73,16 +73,17 @@ Generates a shipping label using ShipEngine.
 
 **Example Response:**
 ```json
-[
 {
-  "orderId": "12345",
+  "labelId": "lbl_12345",
+  "trackingNumber": "1Z999AA10123456784",
+  "carrier": "UPS",
   "address": {
     "line1": "123 Main St",
     "city": "New York",
     "state": "NY",
     "zip": "10001"
   }
-]
+}
 
 
 
