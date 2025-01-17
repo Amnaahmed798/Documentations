@@ -68,12 +68,12 @@ Fetch all product details from Sanity CMS.
     "description": "A stylish and elegant dress for special occasions."
   }
 ]
-2️⃣ Shipping API: /api/shipping-label (POST)
+### 2️⃣ Shipping API: `/api/shipping-label` (POST)
 Generates a shipping label using ShipEngine.
 
 **Example Response:**
 ```json
-
+[
 {
   "orderId": "12345",
   "address": {
@@ -82,7 +82,7 @@ Generates a shipping label using ShipEngine.
     "state": "NY",
     "zip": "10001"
   }
-}
+]
 
 
 
