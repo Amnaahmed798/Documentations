@@ -27,26 +27,29 @@
 ```bash
 git clone https://github.com/yourusername/bandage.git
 cd bandage
-### 2. Install Dependencies
-
+2. Install Dependencies
+bash
+Copy
 npm install
-### 3. Set Up Environment Variables 🔑
+3. Set Up Environment Variables 🔑
 Create a .env.local file in the root directory and add the following keys:
 
 makefile
-
+Copy
 NEXT_PUBLIC_API_URL=your_api_url
 NEXT_PUBLIC_PAYMENT_KEY=your_payment_key
-### 4. Run the Server 🖥️
+4. Run the Server 🖥️
 Start the development server:
-```bash
+
+bash
+Copy
 npm run dev
 Your app will be available at http://localhost:3000.
 
-### 5. Open the Project 🌐
+5. Open the Project 🌐
 Once the server is running, open your browser and visit http://localhost:3000 to view the project in action!
 
-## Dependencies 📦
+Dependencies 📦
 The following dependencies are used in this project:
 
 Next.js: Framework for building server-side rendered React applications.
@@ -56,17 +59,20 @@ React Hook Form: For handling form inputs and validation.
 Stripe: For payment processing.
 To install these dependencies, run:
 
+bash
+Copy
 npm install
-## License 📜
+License 📜
 This project is licensed under the MIT License. Feel free to check the LICENSE file for more details.
 
-## Contact 📧
+Contact 📧
 If you have any questions or suggestions, feel free to contact us:
 
 Email: support@bandageclothing.com
 GitHub: https://github.com/yourusername/bandage
-## Thank You! 🎉
+Thank You! 🎉
 Thank you for checking out Bandage! We hope you enjoy your shopping experience and find exactly what you're looking for. Happy shopping! ✨
+
 
 
 
