@@ -1,6 +1,6 @@
-# Bandage - Clothing Website 👗👚
+# **Bandage - Clothing Website** 👗👚
 
-## About 🚀
+## **About** 🚀
 
 **Bandage** is a cutting-edge clothing e-commerce platform designed with **Next.js** and styled using **Tailwind CSS**. The website features a sleek, modern design that offers a seamless, fast, and responsive shopping experience. Whether you're looking for the latest fashion trends or timeless wardrobe staples, **Bandage** has you covered. With easy navigation and secure payment options, your shopping experience has never been easier!
 
@@ -23,27 +23,25 @@
 
 ## Installation 🛠️
 
-### 1. Clone the Repository
+### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/bandage.git
-cd bandage
+```
 2. Install Dependencies
-bash
-Copy
+```bash
 npm install
+```
 3. Set Up Environment Variables 🔑
 Create a .env.local file in the root directory and add the following keys:
-
-makefile
-Copy
+```bash
+```
 NEXT_PUBLIC_API_URL=your_api_url
 NEXT_PUBLIC_PAYMENT_KEY=your_payment_key
 4. Run the Server 🖥️
 Start the development server:
-
-bash
-Copy
+```bash
 npm run dev
+```
 Your app will be available at http://localhost:3000.
 
 5. Open the Project 🌐
@@ -58,10 +56,9 @@ React: JavaScript library for building user interfaces.
 React Hook Form: For handling form inputs and validation.
 Stripe: For payment processing.
 To install these dependencies, run:
-
-bash
-Copy
+```bash
 npm install
+```
 License 📜
 This project is licensed under the MIT License. Feel free to check the LICENSE file for more details.
 
